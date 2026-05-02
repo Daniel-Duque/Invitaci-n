@@ -11,7 +11,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Home as HomeIcon, MapPinned, Info, Music2 } from 'lucide-react';
-import ParticleReveal from './components/ParticleReveal';
 import Home from './components/Home';
 import Location from './components/Location';
 import Details from './components/Details';
@@ -78,44 +77,42 @@ export default function App() {
         ))}
       </div>
 
-      <ParticleReveal>
-        <main className="relative pt-24 pb-32 md:pb-24 max-w-7xl mx-auto">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeTab}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.6 }}
-            >
-              {renderContent()}
-            </motion.div>
-          </AnimatePresence>
+      <main className="relative pt-24 pb-32 md:pb-24 max-w-7xl mx-auto">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.6 }}
+          >
+            {renderContent()}
+          </motion.div>
+        </AnimatePresence>
 
-          {/* Contextual navigation for Home */}
-          {activeTab === Tab.HOME && (
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2.5 }}
-              className="flex justify-center gap-6 mt-4"
+        {/* Contextual navigation for Home */}
+        {activeTab === Tab.HOME && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.5 }}
+            className="flex justify-center gap-6 mt-4"
+          >
+            <button 
+              onClick={() => setActiveTab(Tab.LOCATION)}
+              className="text-[10px] uppercase tracking-[0.3em] text-gold hover:text-wine transition-colors"
             >
-              <button 
-                onClick={() => setActiveTab(Tab.LOCATION)}
-                className="text-[10px] uppercase tracking-[0.3em] text-gold hover:text-wine transition-colors"
-              >
-                — Ver Ubicación —
-              </button>
-              <button 
-                onClick={() => setActiveTab(Tab.DETAILS)}
-                className="text-[10px] uppercase tracking-[0.3em] text-gold hover:text-wine transition-colors"
-              >
-                — Confirmar —
-              </button>
-            </motion.div>
-          )}
-        </main>
-      </ParticleReveal>
+              — Ver Ubicación —
+            </button>
+            <button 
+              onClick={() => setActiveTab(Tab.DETAILS)}
+              className="text-[10px] uppercase tracking-[0.3em] text-gold hover:text-wine transition-colors"
+            >
+              — Confirmar —
+            </button>
+          </motion.div>
+        )}
+      </main>
 
       {/* Natural Tones Navigation (Dots/Minimal) */}
       <nav className="fixed bottom-10 left-1/2 -translate-x-1/2 z-40 bg-white/40 backdrop-blur-sm px-6 py-3 rounded-full border border-gold/20 shadow-sm">
