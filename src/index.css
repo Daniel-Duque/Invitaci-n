@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", "Palatino", "Palatino Linotype", serif;
+  
+  --color-gold: #c5a059;
+  --color-wine: #5e0b15;
+  --color-cream: #fdfdfb;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-gray-800 font-sans;
+  }
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.wine-text {
+  color: var(--color-wine);
+}
+
+.gold-text {
+  color: var(--color-gold);
+}
+
+.wine-bg {
+  background-color: var(--color-wine);
+}
+
+.gold-border {
+  border-color: var(--color-gold);
+}
