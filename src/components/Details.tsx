@@ -24,7 +24,7 @@ export default function Details() {
           <div className="border-l-2 gold-border pl-8 py-2">
             <h4 className="uppercase text-[11px] tracking-[0.3em] font-bold wine-text mb-4">Clima y Entorno</h4>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Zipacón nos recibirá con un clima fresco (aprox. 14°C). 
+              Subachoque nos recibirá con un clima fresco (aprox. 14°C). 
               Agradecemos llevar paraguas para disfrutar plenamente de los jardines de la hacienda.
             </p>
           </div>

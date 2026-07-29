@@ -6,11 +6,14 @@ export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   React.useEffect(() => {
-    if (audioRef.current && isPlaying) {
-      audioRef.current.play().catch(err => {
-        console.warn("Autoplay blocked by browser. User must interact first.", err);
-        setIsPlaying(false);
-      });
+    if (audioRef.current) {
+      audioRef.current.volume = 0.25;
+      if (isPlaying) {
+        audioRef.current.play().catch(err => {
+          console.warn("Autoplay blocked by browser. User must interact first.", err);
+          setIsPlaying(false);
+        });
+      }
     }
   }, []);
 
@@ -30,7 +33,7 @@ export default function MusicPlayer() {
       <audio
         ref={audioRef}
         loop
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" // Replacing with a more stable/sober placeholder
+        src="https://cdn.pixabay.com/audio/2026/04/14/audio_9380236fdf.mp3" // Replacing with a more stable/sober placeholder
       />
       <button
         onClick={togglePlay}

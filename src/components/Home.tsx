@@ -39,7 +39,7 @@ export default function Home() {
         >
           <div className="md:text-right">
             <p className="uppercase text-[10px] tracking-[0.3em] text-gray-400 mb-1">Octubre</p>
-            <p className="serif text-4xl wine-text">Sábado 10</p>
+            <p className="serif text-4xl wine-text">Lunes 12</p>
           </div>
           
           <div className="flex justify-center">
@@ -60,7 +60,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.7 }}
         >
-          Zipacón, Cundinamarca
+          Vía Subachoque
         </motion.p>
       </motion.div>
     </div>
