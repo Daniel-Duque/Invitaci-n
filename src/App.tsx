@@ -16,6 +16,8 @@ import Location from './components/Location';
 import Details from './components/Details';
 import MusicPlayer from './components/MusicPlayer';
 
+const vdLogo = '/src/assets/images/vd_logo_1786241178460.jpeg';
+
 enum Tab {
   HOME = 'home',
   LOCATION = 'location',
@@ -140,8 +142,12 @@ export default function App() {
       </nav>
 
       {/* Header Branding */}
-      <div className="fixed top-8 left-8 z-30">
-        <h2 className="serif italic text-lg tracking-widest wine-text opacity-70">V & D</h2>
+      <div className="fixed top-6 left-6 z-30">
+        <img 
+          src={vdLogo} 
+          alt="V & D Logo" 
+          className="h-12 w-auto object-contain mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity" 
+        />
       </div>
 
       <MusicPlayer />

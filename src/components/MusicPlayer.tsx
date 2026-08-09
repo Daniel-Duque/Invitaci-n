@@ -33,7 +33,7 @@ export default function MusicPlayer() {
       <audio
         ref={audioRef}
         loop
-        src="https://cdn.pixabay.com/audio/2026/04/14/audio_9380236fdf.mp3" // Replacing with a more stable/sober placeholder
+        src="https://cdn.pixabay.com/audio/2025/12/11/audio_249561b3fc.mp3" // Replacing with a more stable/sober placeholder
       />
       <button
         onClick={togglePlay}
