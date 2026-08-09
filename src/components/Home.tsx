@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Calendar, Clock, MapPin } from 'lucide-react';
-
-const vdLogo = '/src/assets/images/vd_logo_1786241178460.jpeg';
-const couplePhoto = '/src/assets/images/WhatsApp Image 2026-08-08 at 20.51.41.jpeg';
+import vdLogo from '../assets/images/vd_logo_1786241178460.jpeg';
+import couplePhoto from '../assets/images/WhatsApp Image 2026-08-08 at 20.51.41.jpeg';
 
 export default function Home() {
   return (

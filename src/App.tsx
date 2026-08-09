@@ -15,8 +15,7 @@ import Home from './components/Home';
 import Location from './components/Location';
 import Details from './components/Details';
 import MusicPlayer from './components/MusicPlayer';
-
-const vdLogo = '/src/assets/images/vd_logo_1786241178460.jpeg';
+import vdLogo from './assets/images/vd_logo_1786241178460.jpeg';
 
 enum Tab {
   HOME = 'home',
