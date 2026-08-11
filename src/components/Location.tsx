@@ -56,7 +56,7 @@ export default function Location() {
             </div>
 
             <p className="text-xs text-gray-500 italic border-l-2 gold-border pl-4 py-1 mt-4">
-              Recomendamos salir con suficiente tiempo para evitar contratiempos y disfrutar tranquilamente del inicio del evento a las 11:00 AM.
+              Recomendamos salir con suficiente tiempo para evitar contratiempos y disfrutar tranquilamente del inicio del evento a las 12:00 AM.
             </p>
           </div>
           
