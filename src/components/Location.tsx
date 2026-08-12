@@ -22,9 +22,15 @@ export default function Location() {
                 Vía Subachoque
               </h4>
             </div>
-            <div className="flex items-center gap-2 text-xs text-gray-500 italic bg-gold/5 px-4 py-2 rounded-full border border-gold/20">
-              <Compass size={16} className="text-gold" />
-              A 1.5 horas de Bogotá
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="flex items-center gap-2 text-xs text-gray-500 italic bg-gold/5 px-4 py-2 rounded-full border border-gold/20">
+                <Compass size={16} className="text-gold" />
+                A 1.5 horas de Bogotá
+              </div>
+              <div className="flex items-center gap-2 text-xs text-gray-500 italic bg-gold/5 px-4 py-2 rounded-full border border-gold/20">
+                <Car size={16} className="text-gold" />
+                Parqueadero en la hacienda
+              </div>
             </div>
           </div>
 
@@ -50,13 +56,13 @@ export default function Location() {
                 </li>
                 <li className="flex gap-3">
                   <span className="serif font-semibold text-gold text-base shrink-0">4.</span>
-                  <span><strong className="font-semibold text-gray-800">Llegada:</strong> Continúa por esa vía principal aproximadamente 6 km en dirección norte; encontrarás la hacienda a un costado de la carretera.</span>
+                  <span><strong className="font-semibold text-gray-800">Llegada:</strong> Continúa por esa vía principal aproximadamente 6 km en dirección norte; encontrarás la hacienda a un costado de la carretera. La hacienda cuenta con parqueadero disponible para los invitados.</span>
                 </li>
               </ol>
             </div>
 
             <p className="text-xs text-gray-500 italic border-l-2 gold-border pl-4 py-1 mt-4">
-              Recomendamos salir con suficiente tiempo para evitar contratiempos y disfrutar tranquilamente del inicio del evento a las 12:00 AM.
+              Recomendamos salir con suficiente tiempo para evitar contratiempos y disfrutar tranquilamente del inicio del evento a las 11:00 AM.
             </p>
           </div>
           
